@@ -1,4 +1,3 @@
-// @ts-check
 import globals from 'globals';
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
@@ -9,7 +8,7 @@ export default defineConfig(
   globalIgnores(['eslint.config.mjs', '**/*.spec.ts', '**/*.e2e-spec.ts']),
   eslint.configs.recommended,
   tseslint.configs.recommendedTypeChecked,
-  // eslintPluginPrettierRecommended,
+  eslintPluginPrettierRecommended,
   {
     languageOptions: {
       globals: {
